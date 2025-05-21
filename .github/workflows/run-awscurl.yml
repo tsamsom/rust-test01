@@ -1,0 +1,21 @@
+name: Rust Audit
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses:  actions/setup-python@v5
+    - name: Display Python Version
+      run: python -c 'import sys; print(sys.version)'
+    - name: Install awscurl
+      run: python -m pip install awscurl
+    - name: Try awscurl
+      run: ./doit
+      

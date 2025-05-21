@@ -1,1 +1,1 @@
-curl -G   https://2qaiqg4el2lyy6fvgkpifotcui0zylyn.lambda-url.us-west-2.on.aws -d 'name=Tony'
+awscurl  https://2qaiqg4el2lyy6fvgkpifotcui0zylyn.lambda-url.us-west-2.on.aws -d 'name=Tony'
