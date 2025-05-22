@@ -22,7 +22,7 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v2
       with:
-        role-to-assume: arn:aws:iam::806877325588:role/silxapp-permissions
+        role-to-assume: arn:aws:iam::806877325588:role/rust-test01-lambdaexecutionrole
         aws-region: us-west-2             
     - name: Try awscurl
       run: ./doit
